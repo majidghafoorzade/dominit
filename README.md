@@ -30,3 +30,13 @@ const dominitize = new Dominitize(
 );
 </script>
 ```
+
+Result of above code will be:
+```html
+
+<div id="app">
+  <div class="post-body">
+    <h1>Post title</h1>
+  </div>
+</div>
+```
