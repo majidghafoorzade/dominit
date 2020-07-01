@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominit example</title>
+</head>
+<body>
+    
+    <div id="app"></div>
+
+
+    <script src="../dist/dominit.min.js"></script>
+    <script>
+        const appDOM = {
+            el: 'div',
+            attrs: {
+                class: 'container',
+            },
+            children: [
+                {
+                    el: 'h1',
+                    attrs: {
+                        schema: 'Heading',
+                        id: 'post-heading'
+                    },
+                    text: 'This is Post Heading'
+                },
+                {
+                    el: 'form',
+                    attrs: {
+                        class: 'post-form'
+                    },
+                    children: [
+                        {
+                            el: 'input',
+                            attrs: {
+                                type: 'text',
+                                placeholder: 'type here...',
+                                id: 'myInput'
+                            },
+                        },
+                        {
+                            el: 'button',
+                            attrs: {
+                                type: 'submit'
+                            },
+                            text: 'Submit From'
+                        }
+                    ],
+                    events: {
+                        submit: function(e){
+                            e.preventDefault();
+                            var inputValue = document.getElementById("myInput");
+                            console.log(inputValue.value);
+                        },
+                    }
+                },
+            ]
+        };
+        const App = document.getElementById("app");
+        const dominit = new Dominit(
+            App,
+            appDOM
+        );
+        
+        dominit.render();
+    </script>
+</body>
+</html>
