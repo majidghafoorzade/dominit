@@ -24,10 +24,11 @@ var appDOM = {
 };
   
 const App = document.getElementById("app");
-const dominitize = new Dominitize(
+const dominit = new Dominit(
   App,
   appDOM
 );
+dominit.render();
 </script>
 ```
 
