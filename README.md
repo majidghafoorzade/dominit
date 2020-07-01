@@ -1,7 +1,7 @@
 # dominit
 Simple Object to DOM Element generator for JavaScript
 
-Writing a Javascript object, convert it to DOM element simply using Dominit!
+Write a Javascript object, convert it to DOM element simply using Dominit!
 
 Ultra lightweight(~0.5kb!) and high performance
 
