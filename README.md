@@ -1,5 +1,6 @@
 # dominit
 Simple Object to DOM Element generator for JavaScript
+Writing an Javascript object, convert it to DOM element simply using Dominit!
 
 ## Simple usage example:
 
@@ -41,3 +42,7 @@ Result of above code will be:
   </div>
 </div>
 ```
+
+
+
+
