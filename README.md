@@ -11,7 +11,7 @@ Simple Object to DOM Element generator for JavaScript
 <script src="/path/to/dominit.min.js"></script>
 <script>
 var appDOM = {
-  el: 'div'
+  el: 'div',
   attrs: {
     class: 'post-body'
   },
